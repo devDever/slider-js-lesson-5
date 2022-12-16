@@ -1,39 +1,37 @@
-const sliderList = document.querySelector('.slider-list');
-const slide = sliderList.querySelector('div');
-const leftButton = document.querySelector('.left-btn');
-const rightButton = document.querySelector('.right-btn');
+// const sliderList = document.querySelector('.slider-list');
+// const slide = sliderList.querySelector('div');
+// const leftButton = document.querySelector('.left-btn');
+// const rightButton = document.querySelector('.right-btn');
 
-let incrementSlidePostion = 0;
+// let incrementSlidePostion = 0;
 
-function toLeft() {
+// function toLeft() {
 
-    if (incrementSlidePostion >= 415) {
-        return;
-    }
+//     if (incrementSlidePostion >= 415) {
+//         return;
+//     }
 
-    if (incrementSlidePostion >= 0) {
-        incrementSlidePostion += slide.clientWidth + 5;
-        sliderList.style.transform = 'translateX(-' + incrementSlidePostion + 'px)';
-    }
-}
+//     if (incrementSlidePostion >= 0) {
+//         incrementSlidePostion += slide.clientWidth + 5;
 
-function toRight() {
+//         // sliderList.style.transform = 'translateX(-' + incrementSlidePostion + 'px)';
+//         sliderList.style.transform = `translateX(-${incrementSlidePostion}px)`;
+//     }
+// }
 
-    if (incrementSlidePostion === 0) {
-        return;
-    }
+// function toRight() {
 
+//     if (incrementSlidePostion === 0) {
+//         return;
+//     }
 
-    if (incrementSlidePostion > 0) {
-        incrementSlidePostion -= slide.clientWidth + 5;
-        sliderList.style.transform = 'translateX(-' + incrementSlidePostion + 'px)';
-        return;
-    }
-
-    incrementSlidePostion += slide.clientWidth + 5;
-    sliderList.style.transform = 'translateX(' + incrementSlidePostion + 'px)';
-}
+//     if (incrementSlidePostion > 0) {
+//         incrementSlidePostion -= slide.clientWidth + 5;
+//         sliderList.style.transform = 'translateX(-' + incrementSlidePostion + 'px)';
+//         return;
+//     }
+// }
 
 
-leftButton.addEventListener('click', () => toLeft());
-rightButton.addEventListener('click', () => toRight());
+// leftButton.addEventListener('click', () => toLeft());
+// rightButton.addEventListener('click', () => toRight());
