@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slider-wrapper {
+    border: 1px solid;
+    width: 500px;
+    margin: 100px;
+    overflow: hidden;
+}
+
+.slider-list {
+    display: flex;
+    gap: 5px;
+}
+
+.slider-element {
+    min-width: 100px;
+    width: 100px;
+    height: 100px;
+    background-color: #aaa;
+}
