@@ -5,8 +5,7 @@
 }
 
 .slider-wrapper {
-    border: 1px solid;
-    width: 500px;
+    width: 625px;
     margin: 100px;
     overflow: hidden;
 }
@@ -14,6 +13,7 @@
 .slider-list {
     display: flex;
     gap: 5px;
+    transition: .3s;
 }
 
 .slider-element {
